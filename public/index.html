@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Facebook to QKSMS</title>
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <form class="text-center" action="fileupload" method="post" enctype="multipart/form-data">
+                <h1 class="mb-5">Facebook to QKSMS</h1>
+                <label id="text-input-file" for="input-file" class="btn btn-info">Import Your Json File</label>
+                <input class="d-none" id="input-file" required accept="application/JSON" type="file"
+                       name="filetoupload">
+                <input class="form-control" required type="text" placeholder="Facebook Name" name="name">
+                <input class="form-control" required minlength="12" maxlength="12" type="text"
+                       placeholder="Contact number : +33... "
+                       name="number">
+                <input id="submit-input" class="btn btn-success" type="submit" value="Validate">
+                <a href="https://github.com/Co-7/MessengerToSms"><img src="assets/github.png" alt=""></a>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
